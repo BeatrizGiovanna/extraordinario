@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+      });
+    });
+    </script>
+   
+    
+    <body>
+       
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="assets/img/logo.jpg" alt="Card image" style="width:70px" height="70px"> 
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem somos</a></li>
+                        <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                        <li class="nav-item"><a href="curiosidade.html" class="nav-link">Curiosidades</a></li>
+                        <li class="nav-item"><a href="formulario.html" class="nav-link">Formulario</a></li>
+                    </ul>
+                </div>
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+        
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem somos</a></li>
+                    <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="curiosidade.html" class="nav-link">Curiosidades</a></li>
+                    <li class="nav-item"><a href="formulario.html" class="nav-link">Formulario</a></li>
+                </ul>
+        
+                <div class="login-button">
+
+                    <button><a href="#">Entrar</a></button>
+                    
+                </div>
+            </div>
+        </header>
+            <main>
+                
+   
+                <div class="principal">                   
+                    <h1>Como funcionam os nossos serviços?</h1>
+                    <img src="assets/img/compiuter.png" style="width:70px" height="70px"> 
+                    <p>Se você possui uma empresa, e sente que tem algo de errado. 
+                        <br>Que mesmo com investimentos, não vê retornos financeiros. 
+                        Se vocẽ tem problemas de comunicação, se ainda utiliza de agendas 
+                        físicas para anotações importantes do dia a dia e acaba se perdendo.
+                        Temos a solução perfeita para você.<br>
+
+                        <br>Você conhece o termo ‘brainstorms’ ? A tradução literal seria algo parecido com ‘chuva de ideias’, e
+                        ela é a solução para grande parte de suas dores.
+                        Através dela iremos ouvir suas queixas e a partir delas desenvolver
+                        soluções tecnológicas e inovadoras que irão servir de base para o desenvolvimento de um sistema criado
+                        e pensado exclusivamente para você, então não perca tempo e nos contate!<br>
+                    </p> 
+                    
+                    
+                <br>
+                <h1>Entre em Contato</h1>
+                <form class="formulario" method="post" action="#">
+          
+                    <div class="metade left">
+                  
+                      <input type="text" placeholder="Nome" required="">
+                      <input type="email" placeholder="E-mail" required="">
+                      <input type="text" placeholder="Assunto" required="">
+                  
+                    </div>
+                          
+                    <div class="metade right">
+                    <textarea name="mensagem" type="text" placeholder="Mesagem" required=""></textarea>
+                </div>  
+               
+                
+                <input type="submit" value="Enviar Dados" class="btn-submit">
+                
+                </form>
+                <p id="p1">fale conosco!</p>
+              
+                <button>clique aqui</button> 
+               
+                </div>
+            </main>
+
+ </body>
+</head>
+</html>
